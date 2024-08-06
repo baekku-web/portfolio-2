@@ -1,0 +1,315 @@
+@charset "uth-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#layout {
+    display: flex;
+    height: calc(100vh - 120px);
+}
+
+header {
+    width: 200px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+header ul {
+    margin-top: 100px;
+    border: 1px solid rgb(129, 175, 35);
+}
+
+header ul a {
+    display: block;
+    text-align: center;
+}
+
+header li {
+    position: relative;
+}
+
+header li:hover .subMenu {
+    display: block;
+    z-index: 1;
+}
+
+.mainMenu {
+    padding: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    background-color: ivory;
+    border: 1px solid rgb(129, 175, 35);
+}
+
+.mainMenu:hover {
+    background-color: rgb(129, 175, 35);
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+.subMenu {
+    background-color: ivory;
+    box-shadow: 0 0 5px grey;
+    padding: 7px;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    right: -90%;
+    display: none;
+}
+
+.subMenu a {
+    padding: 8px;
+}
+
+.subMenu a:hover {
+    background-color: burlywood;
+}
+
+/* ====================================== */
+
+main {
+    width: 400px;
+    /* background-color: yellowgreen; */
+    padding: 30px;
+}
+
+#lorem {
+    display: flex;
+    align-items: center;
+}
+
+#lorem img {
+    width: 70px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+#lorem div {
+    flex: 5;
+    padding: 10px;
+}
+
+#lorem h3 {
+    padding-bottom: 10px;
+}
+
+#arr_1.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 24;
+
+  font-size: 1.7rem;
+  transition: all 0.3s;
+}
+
+#arr_1.material-symbols-outlined:hover {
+    transform: translateX(15px);
+}
+
+/* =============notice================== */
+
+#notice {
+    padding-top: 40px;
+}
+
+main h2 {
+    border-bottom: 38px solid rgb(238, 163, 23);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid transparent;
+    width: 150px;
+    text-align: center;
+}
+
+main h2 span {
+    display: block;
+    transform: translateY(31px);
+    font-size: 1.1rem;
+}
+
+#notice ol {
+    list-style: none;
+    border-top: 3px solid rgb(238, 163, 23);
+    line-height: 200%;
+    padding-top: 10px;
+}
+
+#notice ol span {
+    float: right;
+    color: #bbb;
+}
+
+#notice ol a:hover {
+    color: rgb(238, 163, 23);
+    text-decoration: underline;
+}
+
+
+/* ============gallery================= */
+
+#gallery div{
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 3px solid rgb(238, 163, 23);
+}
+
+#gallery img {
+    padding: 20px 10px 10px;
+}
+
+#gallery a:hover {
+    color: rgb(238, 163, 23); /*?????*/
+    text-decoration: underline;
+}
+
+/* ============link===================== */
+
+#link {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px dotted rgb(238, 163, 23);
+}
+
+#link img {
+    padding: 5px;
+}
+
+#link img:hover {
+    filter: drop-shadow(0 1px 5px black);
+}
+
+#link a:hover {
+    color: rgb(238, 163, 23); /*?????*/
+    text-decoration: underline;
+}
+
+/* ===================================== */
+#slideArea {
+    flex: 1;
+    /* background-color: bisque; */
+    overflow: hidden;
+}
+
+#slideArea h2 {
+    display: none;
+}
+
+#slide {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+
+#slide a {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===================================== */
+
+footer {
+    height: 120px;
+    background-color: rgb(80, 42, 42);
+    color: ivory;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+footer>a {
+    width: 200px;
+    height: 100%;
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+}
+
+footer div {
+    flex: 1;
+    padding: 0 100px;
+}
+
+footer nav {
+    padding: 10px;
+}
+
+footer nav a {
+    color: ivory;
+}
+
+footer nav a::after {
+    content: "|";
+    padding: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer select {
+     margin: 20px;
+     width: 200px;
+     height: 25px;
+     border-radius: 5px;
+}
+
+/* =================================================== */
+
+#popup {
+    width: 500px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    top: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    position: fixed;
+    left: calc(100% - 60%);
+    text-align: justify;
+    line-height: 100%;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+#popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#popup h3 {
+    padding-bottom: 20px;
+}
+
+#popup button {
+    float: right;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
