@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#layout {
+    height: calc(100vh - 10vh);
+    background-color: ivory;
+}
+
+/* ====================header========================== */
+header {
+    height: 20%;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+#logo{
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(113, 167, 244);
+}
+
+#logo>img{
+    max-height: 100%;
+}
+
+/* ===================header-Menu==================== */
+header ul {
+    flex:1; 
+    list-style:none; 
+    display: flex; 
+    text-align: center; 
+    color: #555;
+}
+
+header li {
+    flex: 1;
+    position: relative;
+    
+}
+
+.mainMenu {
+    font-size: 1em;
+    font-weight:bold;
+    padding:8px 0 10px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #555;
+}
+
+ .subMenu {
+    background: rgba(255,255,255 , 0.85); 
+    max-height: 0; 
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+ }
+
+ .subMenu a {
+    padding: 3% 0 4%;
+    font-size: 0.8em;
+ }
+ 
+ /* 메뉴호버*/
+ header li .subMenu {
+    transition: 0.5s;
+ }
+
+ header li:hover .mainMenu {
+    background:rgb(113, 167, 244); 
+    color:white;
+ }
+
+ header li:hover .subMenu {
+    max-height: 300px;
+    padding: 5% 0;
+ }
+
+ .subMenu a:hover {
+    background: rgb(113, 167, 244);
+    color: white;
+ } 
+
+/* ======================footer========================= */
+footer {
+    height: calc(100vh - 90vh);
+    background-color: rgb(110, 64, 53);
+}
