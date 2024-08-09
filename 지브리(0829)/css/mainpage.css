@@ -19,21 +19,20 @@ img {
 
 #layout {
     height: calc(100vh - 10vh);
-    background-color: ivory;
 }
 
 /* ====================header========================== */
 header {
     height: 20%;
     background-color: white;
-    display: flex;
-    align-items: flex-end;
 }
 
 #logo{
     height: 100%;
     padding: 10px;
     background-color: rgb(125, 175, 245);
+    display: flex;
+    justify-content: center;
 }
 
 #logo>img{
@@ -64,7 +63,7 @@ header li {
 .mainMenu:not(#line) {border-left: 1px solid rgb(110, 64, 53);}
 
  .subMenu {
-    background: rgba(255,255,255 , 0.9); 
+    background: rgba(255, 255, 255, 0.95); 
     max-height: 0; 
     overflow: hidden;
     position: absolute;
@@ -74,6 +73,7 @@ header li {
 
  .subMenu a {
     padding: 3% 0 4%;
+    color: black;
     font-size: clamp(0.3rem, 1.2vw, 1rem);
  }
  
@@ -88,7 +88,7 @@ header li {
  }
 
  header li:hover .subMenu {
-    max-height: 300px;
+    max-height: 500px;
     padding: 5% 0;
  }
 
@@ -97,16 +97,46 @@ header li {
     color: white;
  } 
 
- /* ===================menu=============================== */
+ /* ===================main=============================== */
  main {
     display: flex;
     height: calc(100vh - 30vh);
     align-items: center;
+    margin-top: 3%;
  }
 
- #notigall {
-    flex: 0.5;
+ #intronoti {
+    flex: 0.7;
+    margin: 0 2%;
+    height: 70%;
  }
+
+ #introduce p {
+   border: 3px solid rgb(110, 64, 53);
+   border-radius: 10px;
+   padding: 5% 6%;
+   font-size: clamp(0.3rem, 0.9vw, 1rem);
+ }
+
+ #notice {
+   margin-top: 15%;
+ }
+
+ #notice ol {
+   border: 3px solid rgb(110, 64, 53);
+   border-radius: 10px;
+   font-size: clamp(0.3rem, 1vw, 1rem);
+ }
+
+ #notice ol li a {
+   display: inline;
+ }
+
+ #notice ol li span {
+   float: right;
+ }
+
+ /* ---------------------------------------------------------- */
 
  #slideArea {
     flex: 1;
@@ -129,8 +159,37 @@ header li {
     border-radius: 30px;
  }
 
+ /* --------------------------------------------------------------- */
+
  #quick {
-    flex: 0.3;
+    flex: 0.2;
+    border: 3px solid rgb(110, 64, 53);
+    border-radius: 30px;
+    margin: 0 3%;
+    padding: 30px;
+    height: 70%;
+ }
+
+ #quick h3 {
+   color: rgb(110, 64, 53); 
+   text-align: center;
+ }
+
+ #quick ul {
+   margin-top: 5%;
+ }
+
+ #quick ul li {
+   line-height: 170%;
+ }
+ 
+ #quick ul li a {
+   color: black;
+ }
+ 
+ #quick ul li a:hover {
+   color: rgba(110, 64, 53, 0.85);
+   text-decoration: underline;
  }
 
 /* ======================footer========================= */
