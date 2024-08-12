@@ -21,6 +21,16 @@ img {
     height: calc(100vh - 10vh);
 }
 
+h3 {
+   color: rgb(110, 64, 53);
+   position: absolute;
+   background-color: white;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   padding: 0 3%;
+   font-size: clamp(0.5rem, 1.3vw, 1.3rem);
+}
+
 /* ====================header========================== */
 header {
     height: 20%;
@@ -111,24 +121,40 @@ header li {
     height: 70%;
  }
 
- #introduce p {
+ #introduce {
    border: 3px solid rgb(110, 64, 53);
-   border-radius: 10px;
+   position: relative;
+   border-radius: 15px;
+ }
+
+ #introduce p {
    padding: 5% 6%;
-   font-size: clamp(0.3rem, 0.9vw, 1rem);
+   padding-top: 7%;
+   font-size: clamp(0.3rem, 1vw, 1rem);
+   line-height: 150%;
  }
 
  #notice {
    margin-top: 15%;
+   border: 3px solid rgb(110, 64, 53);
+   position: relative;
+   border-radius: 15px;
  }
 
  #notice ol {
-   border: 3px solid rgb(110, 64, 53);
-   border-radius: 10px;
+   border-radius: 15px;
    font-size: clamp(0.3rem, 1vw, 1rem);
+   list-style: none;
+   margin: 3%;
+   margin-top: 5%;
+ }
+
+ #notice ol li {
+   line-height:170%;
  }
 
  #notice ol li a {
+   color: black;
    display: inline;
  }
 
@@ -152,39 +178,37 @@ header li {
     width: 100%;
     height: 100%;
     transition: opacity 0.8s;
-    border-radius: 30px;
  }
 
  #slideArea> div> div> a img {
-    border-radius: 30px;
+    border-radius: 20px;
  }
 
  /* --------------------------------------------------------------- */
 
  #quick {
-    flex: 0.2;
+    flex: 0.4;
     border: 3px solid rgb(110, 64, 53);
-    border-radius: 30px;
+    border-radius: 15px;
     margin: 0 3%;
-    padding: 30px;
+    padding: 0 1%;
     height: 70%;
- }
-
- #quick h3 {
-   color: rgb(110, 64, 53); 
-   text-align: center;
+    position: relative;
  }
 
  #quick ul {
-   margin-top: 5%;
+   margin-top: 30%;
+   list-style: inside;
  }
 
  #quick ul li {
    line-height: 170%;
+   font-size: clamp(0.1rem, 1.2vw, 1rem);
  }
  
  #quick ul li a {
    color: black;
+   display: inline;
  }
  
  #quick ul li a:hover {
