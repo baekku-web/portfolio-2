@@ -68,6 +68,7 @@ header li {
     font-weight:bold;
     padding:8px 0 10px;
     letter-spacing: 3px;
+    border-bottom: 1px solid rgb(110, 64, 53);
 }
 
 .mainMenu:not(#line) {border-left: 1px solid rgb(110, 64, 53);}
