@@ -119,14 +119,42 @@ header li {
     height: 87%;
     display: flex;
     position: relative;
-    margin: 0 10%;
+    margin: 0 15%;
  }
 
- main div>img {
+ #poster img {
     max-height: 70%;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    left: 15%;
+   }
+   
+ #moviedata {
+    width: 50%;
+    max-height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+ }
+
+ #moviedata h2 {
+    margin-bottom: 8%;
+ }
+
+ #moviedata .data {
+    line-height: 200%;
+ }
+
+ .data tr td:nth-of-type(1) {
+    font-weight: bold;
+    float: right;
+    padding-right: 10%;
+ }
+
+ .data tr td:nth-of-type(3) {
+    padding-left: 5%;
  }
 
  main ul {
