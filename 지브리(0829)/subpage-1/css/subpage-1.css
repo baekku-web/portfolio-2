@@ -184,7 +184,7 @@ header li {
     color: white;
  }
 
- main ul li:hover .underMenu:not(#line2){
+ main ul li:hover a{
     background: rgb(110, 64, 53);
     color: white;
  }
