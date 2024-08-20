@@ -18,7 +18,7 @@ img {
 }
 
 #layout {
-   height: calc(100vh - 10vh);
+   height: calc(100vh - 15vh);
 }
 
 h3 {
@@ -121,55 +121,62 @@ header li {
 
  main section {
    height: 87%;
-   overflow: scroll;
+  }
+  
+  section> div {
+    border: 3px solid rgb(110, 64, 53);
+    border-radius: 15px;
+    overflow-y: auto;
+    padding: 1% 10%;
+    margin: 0 5%;
+    max-height: 75%;
 }
 
-section> #images {
-   border: 3px solid rgb(110, 64, 53);
-   border-radius: 15px;
-   padding: 1% 10%;
-   margin: 0 5%;
- } 
+::-webkit-scrollbar-button {
+  background-color: blue;
+}
 
  section> #images td {
    padding: 5px;
  }
 
- /* ----------------------------------------------------------------- */
-
- main ul {
+ 
+ 
+ /* ======================footer========================= */
+ footer ul {
    flex: 1;
    list-style:none; 
    display: flex; 
    text-align: center;
    border-top: 1px solid rgb(110, 64, 53);
- }
+  }
+  
+  footer ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
+  
+  footer ul li {
+    flex: 1;
+  }
+  
+  .underMenu {
+    font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+    font-weight:bold;
+    padding:8px 0 10px;
+    letter-spacing: 3px;
+  }
+  
+  footer> ul li:nth-of-type(2) a{
+    background: rgb(110, 64, 53);
+    color: white;
+  }
+  
+  footer ul li:hover a{
+    background: rgb(110, 64, 53);
+    color: white;
+  }
 
- main ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
+  /* ----------------------------------------------------------------- */
 
- main ul li {
-   flex: 1;
- }
-
- .underMenu {
-   font-size: clamp(0.7rem, 1.2vw, 1.3rem);
-   font-weight:bold;
-   padding:8px 0 10px;
-   letter-spacing: 3px;
- }
-
- main> ul li:nth-of-type(2) a{
-   background: rgb(110, 64, 53);
-   color: white;
- }
-
- main ul li:hover a{
-   background: rgb(110, 64, 53);
-   color: white;
- }
-
-/* ======================footer========================= */
-footer {
-   height: calc(100vh - 90vh);
+  footer div{
+    height: calc(100vh - 85vh);
    background-color: rgb(110, 64, 53);
 }

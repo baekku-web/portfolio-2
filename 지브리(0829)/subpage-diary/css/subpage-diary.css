@@ -18,7 +18,7 @@ img {
 }
 
 #layout {
-   height: calc(100vh - 10vh);
+   height: calc(100vh - 15vh);
 }
 
 h3 {
@@ -112,47 +112,78 @@ header li {
    height: calc(100vh - 30vh);
    align-items: center;
    margin-top: 3%;
+   text-align: center;
  }
  
  main section {
+   margin: auto;
     height: 87%;
+    width: 60%;
  }
 
- /* ----------------------------------------------------------------- */
-
- main ul {
-   flex: 1;
-   list-style:none; 
-   display: flex; 
-   text-align: center;
-   border-top: 1px solid rgb(110, 64, 53);
+ main section a {
+   width: 5%;
  }
 
- main ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
-
- main ul li {
-   flex: 1;
+ main section div {
+   display: flex;
  }
 
- .underMenu {
-   font-size: clamp(0.7rem, 1.2vw, 1.3rem);
-   font-weight:bold;
-   padding:8px 0 10px;
-   letter-spacing: 3px;
+ #textarea {
+   background: url(images/nausicaa023.jpg) no-repeat;
+   background-size: 100% 100%;
+   opacity: 45%;
+   width: 100%;
+   padding: 18%;
  }
 
- main> ul li:nth-of-type(1) a{
-   background: rgb(110, 64, 53);
-   color: white;
+ main section textarea::placeholder {
+   color: black;
+   font-weight: bold; 
  }
 
- main ul li:hover a{
-   background: rgb(110, 64, 53);
-   color: white;
+ main section button.save {
+   float: right;
+   margin-top: 2%;
  }
-
-/* ======================footer========================= */
-footer {
-   height: calc(100vh - 90vh);
-   background-color: rgb(110, 64, 53);
-}
+ 
+ 
+ /* ======================footer========================= */
+ 
+ footer ul {
+    flex: 1;
+    list-style:none; 
+    display: flex; 
+    text-align: center;
+    border-top: 1px solid rgb(110, 64, 53);
+   }
+   
+   footer ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
+   
+   footer ul li {
+      flex: 1;
+   }
+   
+   .underMenu {
+      font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+      font-weight:bold;
+      padding:8px 0 10px;
+      letter-spacing: 3px;
+   }
+   
+   footer> ul li:nth-of-type(1) a{
+      background: rgb(110, 64, 53);
+      color: white;
+   }
+   
+   footer ul li:hover a{
+      background: rgb(110, 64, 53);
+      color: white;
+   }
+   
+   /* ----------------------------------------------------------------- */
+   
+   footer div{
+      height: calc(100vh - 85vh);
+      background-color: rgb(110, 64, 53);
+   }
