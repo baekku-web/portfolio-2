@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지브리 다이어리</title>
     <link rel="stylesheet" href="css/subpage-diary.css">
+    <script src="js/diary.js"></script>
 </head>
 <body>
     <div id="layout">
@@ -71,11 +72,10 @@
 
         <main>
             <section>
-                <a href="#"><img src="images/file_new.png" alt="movie_file"></a>
                 <div>
-                    <button>◀</button>
+                    <button id="prevButton">◀</button>
                     <textarea id="textarea" name="content" placeholder="여기에 입력하세요."></textarea>
-                    <button>▶</button>
+                    <button id="nextButton">▶</button>
                 </div>
                 <button class="save">저장하기</button>
             </section>
@@ -87,14 +87,16 @@
         <footer>
             <ul>
                 <li>
-                    <a href="#" id="line2" class="underMenu">새로운 다이어리 작성하기</a>
+                    <a href="#" id="line2" class="underMenu">바람 계곡의 나우시카</a>
                 </li>
                 <li>
-                    <a href="#" class="underMenu">내가 쓴 다이어리 모아보기</a>
+                    <a href="#" class="underMenu">이미지</a>
+                </li>
+                <li>
+                    <a href="#" class="underMenu">다이어리 작성하기</a>
                 </li>
             </ul>
             <div></div>
         </footer>
-</body>
 </body>
 </html>

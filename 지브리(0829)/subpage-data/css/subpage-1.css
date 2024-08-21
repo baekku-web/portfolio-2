@@ -193,6 +193,6 @@ footer ul {
   /* ----------------------------------------------------------------- */
 
   footer div{
-    height: calc(100vh - 85vh);
+    height: calc(100vh - 90.9vh);
    background-color: rgb(110, 64, 53);
 }
