@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded' , () => {
 
     let imageIndex = 0 ;
-    const images = ["css/images/image1.jpg", "css/images/image2.jpg", "css/images/image3.jpg"];
+    const images = [
+        "css/images/image1.jpg", 
+        "css/images/image2.jpg", 
+        "css/images/image3.jpg",
+        "css/images/image4.jpg",
+        "css/images/image5.jpg",
+        "css/images/image6.jpg"
+    ];
 
     const updateBackground = () => {
         document.getElementById('textarea').style.backgroundImage = `url('${images[imageIndex]}')`;

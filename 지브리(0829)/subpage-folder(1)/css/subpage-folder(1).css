@@ -21,16 +21,6 @@ img {
    height: calc(100vh - 15vh);
 }
 
-h3 {
-   color: rgb(110, 64, 53);
-   position: absolute;
-   background-color: white;
-   left: 50%;
-   transform: translate(-50% , -50%);
-   padding: 0 3%;
-   font-size: clamp(0.5rem, 1.3vw, 1.3rem);
-}
-
 /* ====================header========================== */
 header {
    height: 20%;
@@ -120,6 +110,30 @@ header li {
     height: 87%;
     width: 60%;
  }
+
+ main section div {
+   display: flex;
+   padding-top: 3%;
+ }
+
+ #textarea {
+   background-color: white;
+   background-size: 100% 100%;
+   opacity: 45%;
+   width: 100%;
+   padding: 18%;
+   resize: none;
+ }
+
+ main section textarea::placeholder {
+   color: black;
+   font-weight: bold; 
+ }
+
+ main section button.save {
+   float: right;
+   margin-top: 2%;
+ }
  
  
  /* ======================footer========================= */
@@ -145,7 +159,7 @@ header li {
       letter-spacing: 3px;
    }
    
-   footer> ul li:nth-of-type(2) a{
+   footer> ul li:nth-of-type(1) a{
       background: rgb(110, 64, 53);
       color: white;
    }

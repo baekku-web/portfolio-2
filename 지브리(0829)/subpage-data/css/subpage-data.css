@@ -21,16 +21,6 @@ img {
     height: calc(100vh - 15vh);
 }
 
-h3 {
-   color: rgb(110, 64, 53);
-   position: absolute;
-   background-color: white;
-   left: 50%;
-   transform: translate(-50% , -50%);
-   padding: 0 3%;
-   font-size: clamp(0.5rem, 1.3vw, 1.3rem);
-}
-
 /* ====================header========================== */
 header {
     height: 20%;
