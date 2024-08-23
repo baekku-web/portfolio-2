@@ -110,16 +110,26 @@ header li {
  /* ===================main=============================== */
  main {
    height: calc(100vh - 30vh);
-   align-items: center;
    margin-top: 3%;
-   text-align: center;
  }
  
  main section {
    margin: auto;
-    height: 87%;
-    width: 60%;
+   height: 87%;
  }
+
+ #folder {
+   display: flex;
+   margin: auto;
+   text-align: center;
+   width: 70%;
+ }
+
+ #folder a {
+   margin-top: 11%;
+   padding: 4%;
+ }
+
  
  
  /* ======================footer========================= */

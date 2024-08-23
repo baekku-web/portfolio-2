@@ -99,79 +99,100 @@ header li {
 
  /* ===================main=============================== */
  main {
-   height: calc(100vh - 30vh);
-   align-items: center;
-   margin-top: 3%;
-   text-align: center;
+   height: calc(100vh - 50vh);
+   transform: translateY(13%);
  }
  
  main section {
-   margin: auto;
-    height: 87%;
-    width: 60%;
+   display: flex;
+   margin-top: 3%;
+   }
+
+ main section #title {
+   flex: 0.4;
+   margin-left: 18%;
  }
 
- main section div {
+ main section #title .titleData {
+   text-align: center;
+   padding: 2% 3% 1.5% 3%;
+   margin-top: 4%;
+   margin-bottom: 8%;
+   font-size: 1.1em;
+ }
+
+ main section #diary {
+   flex: 0.7;
    display: flex;
-   padding-top: 3%;
+   margin-right: 10%;
+ }
+
+ main section #diary> button {
+   background: transparent;
+   border: 1px solid #555;
  }
 
  #textarea {
-   background-color: white;
+   background-image: url(images/image1.jpg);
    background-size: 100% 100%;
-   opacity: 45%;
    width: 100%;
-   padding: 18%;
+   padding: 19%;
    resize: none;
+   opacity: 0.8;
+   font-weight: bold;
+   font-size: 1.3em;
+   border: 1px solid #555;
  }
+
 
  main section textarea::placeholder {
    color: black;
-   font-weight: bold; 
+   font-weight: bold;
  }
 
- main section button.save {
+ main #save {
    float: right;
-   margin-top: 2%;
+   margin-top: 1.3%;
+   margin-right: 10%;
  }
  
  
  /* ======================footer========================= */
  
  footer ul {
+   flex: 1;
+   list-style:none; 
+   display: flex; 
+   text-align: center;
+   border-top: 1px solid rgb(110, 64, 53);
+  }
+  
+  footer ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
+  
+  footer ul li {
     flex: 1;
-    list-style:none; 
-    display: flex; 
-    text-align: center;
-    border-top: 1px solid rgb(110, 64, 53);
-   }
-   
-   footer ul li:not(#line2) {border-left: 1px solid rgb(110, 64, 53);}
-   
-   footer ul li {
-      flex: 1;
-   }
-   
-   .underMenu {
-      font-size: clamp(0.7rem, 1.2vw, 1.3rem);
-      font-weight:bold;
-      padding:8px 0 10px;
-      letter-spacing: 3px;
-   }
-   
-   footer> ul li:nth-of-type(1) a{
-      background: rgb(110, 64, 53);
-      color: white;
-   }
-   
-   footer ul li:hover a{
-      background: rgb(110, 64, 53);
-      color: white;
-   }
-   
-   /* ----------------------------------------------------------------- */
-   
-   footer div{
-      height: calc(100vh - 90.9vh);
-      background-color: rgb(110, 64, 53);
-   }
+  }
+  
+  .underMenu {
+    font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+    font-weight:bold;
+    padding:8px 0 10px;
+    letter-spacing: 3px;
+  }
+  
+  footer> ul li:nth-of-type(1) a{
+    background: rgb(110, 64, 53);
+    color: white;
+  }
+  
+  footer ul li:hover a{
+    background: rgb(110, 64, 53);
+    color: white;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  footer div{
+    height: calc(100vh - 90.9vh);
+   background-color: rgb(110, 64, 53);
+}

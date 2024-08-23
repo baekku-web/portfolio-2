@@ -18,7 +18,7 @@ img {
 }
 
 #layout {
-    height: calc(100vh - 9.1vh);
+    height: calc(100vh - 15vh);
 }
 
 h3 {
@@ -219,6 +219,6 @@ header li {
 
 /* ======================footer========================= */
 footer {
-    height: calc(100vh - 90.9vh);
+    height: calc(100vh - 85vh);
     background-color: rgb(110, 64, 53);
 }
