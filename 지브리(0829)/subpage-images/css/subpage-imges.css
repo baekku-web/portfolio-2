@@ -187,4 +187,13 @@ section> div::-webkit-scrollbar-button {
   footer div{
     height: calc(100vh - 90.9vh);
    background-color: rgb(110, 64, 53);
-}
+  }
+
+  footer p {
+    position: fixed;
+    bottom: 1%;
+    left: 1.5%;
+    color: white;
+    font-size: small;
+    line-height: 150%;
+ }
