@@ -127,18 +127,9 @@ header li {
    margin-right: 10%;
  }
 
- main section #diary> button {
-   background: transparent;
-   border: 1px solid #555;
- }
-
  #textarea {
-   background-image: url(images/image1.jpg);
-   background-size: 100% 100%;
-   width: 100%;
    padding: 19%;
    resize: none;
-   opacity: 0.8;
    font-weight: bold;
    font-size: 1.3em;
    border: 1px solid #555;
