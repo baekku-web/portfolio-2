@@ -80,6 +80,18 @@
 히사이시 조
 약 116분
 
+//============================================================//
+footer banner
+<p>© 2024 백지현. <br> 이미지 출처: STUDIO GHIBLI</p>
+
+footer p {
+   position: fixed;
+   bottom: 1%;
+   left: 1.5%;
+   color: white;
+   font-size: small;
+   line-height: 150%;
+}
 
 
 
