@@ -138,6 +138,10 @@ header li {
     line-height: 200%;
  }
 
+ .data {
+   width: 70%;
+ }
+
  .data tr td:nth-of-type(1) {
     font-weight: bold;
     float: right;
